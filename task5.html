@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Formatter</title>
+</head>
+<body>
+    <script>
+        let section=document.createElement("div");
+        let fname=prompt("Enter the first name");
+        let lname=prompt("Enter the last name");
+        fname=fname.toLowerCase();
+        lname=lname.toLowerCase();
+        result=fname+"."+lname+"@gmail.com"
+        console.log(result);
+        section.style.fontSize="64px";
+        section.append(result);
+        document.body.appendChild(section);
+    </script>
+</body>
+</html>

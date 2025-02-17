@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+</head>
+<body>
+    <script>
+        let section=document.createElement("div");
+        let str=prompt("Enter a string");
+        text=str.split('').reverse().join('');
+        if(str==text){
+            result="It is a palindrome";
+            console.log(result);
+        }
+        else{
+            result="It is not a Palindrome";
+            console.log(result);
+        }
+        section.style.fontSize="64px";
+        section.append(result);
+        document.body.appendChild(section);
+    </script>
+</body>
+</html>
